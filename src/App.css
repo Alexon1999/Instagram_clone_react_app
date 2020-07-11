@@ -1,38 +1,144 @@
-.App {
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  background-color: #fafafa;
+  max-width: 900px;
+  width: 90%;
+  margin: 3rem auto;
+  /* height: 100vh; */
+}
+
+.add_new_post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.app_header {
+  background: white;
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.header_content {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 6vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app_header img {
+  /* width: 103px;
+  height: 29px; */
+  margin-top: 6px;
+  object-fit: contain;
+}
+
+.signInOut {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.instagram_contents {
+  display: flex;
+}
+
+.posts {
+  flex: 2;
+  margin-right: 1rem;
+}
+
+.abonnement {
+  flex: 1;
+}
+
+/* * Modal styling */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2.5px 12px -44px rgba(0, 0, 0, 0.031),
+    0 5.7px 29.3px -44px rgba(0, 0, 0, 0.06),
+    0 10.2px 59px -44px rgba(0, 0, 0, 0.092),
+    0 18.8px 122.2px -44px rgba(0, 0, 0, 0.133),
+    0 46px 320px -44px rgba(0, 0, 0, 0.21);
+}
+
+label {
+  display: block;
+  margin: 0.2rem;
+}
+
+.form-control {
+  margin: 1.5rem;
+}
+
+.form-control .input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.signUpBtn {
+  margin: 0.5rem 0 0 1.5rem;
+  border: 0;
+  background-color: #d556a1;
+  padding: 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.closeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .abonnement {
+    display: none;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .posts {
+    margin-right: 0rem;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
   }
 }

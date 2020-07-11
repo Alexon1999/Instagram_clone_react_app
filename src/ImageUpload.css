@@ -1,0 +1,27 @@
+/* Add  caption and upload Image */
+.upload_container {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  color: #fff;
+}
+
+.upload-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upload_container .input {
+  width: 100%;
+  color: #fff;
+}
