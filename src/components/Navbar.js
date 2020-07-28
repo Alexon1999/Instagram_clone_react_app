@@ -17,19 +17,19 @@ const Navbar = ({ openSignUpModal, openLogInModal, user }) => {
             <FaSignOutAlt
               onClick={() => auth.signOut()}
               cursor='pointer'
-              fontSize='1.1rem'
+              fontSize='1.2rem'
               color='#D556A1'
             />
           ) : (
             <div className='signInOut'>
               <FaUnlock
                 cursor='pointer'
-                fontSize='1.1rem'
+                fontSize='1.2rem'
                 onClick={openLogInModal}
               />
               <FaUser
                 cursor='pointer'
-                fontSize='1.1rem'
+                fontSize='1.2rem'
                 onClick={openSignUpModal}
               />
             </div>

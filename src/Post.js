@@ -31,7 +31,7 @@ const Post = ({ postId, currentUser, userName, imageUrl, caption, logo }) => {
     return () => {
       unSubscribe();
     };
-  }, [postId, comments]);
+  }, [postId]);
 
   const postComment = (e) => {
     e.preventDefault();

@@ -113,13 +113,8 @@ function App() {
 
         <div className='container'>
           <div className='add_new_post'>
-            <IconButton>
-              <FaPlus
-                onClick={() => setNewPost(!newPost)}
-                cursor='pointer'
-                color='#D556A1'
-                fontSize='2rem'
-              />
+            <IconButton onClick={() => setNewPost(!newPost)}>
+              <FaPlus cursor='pointer' color='#D556A1' fontSize='2rem' />
             </IconButton>
             <small>add new post</small>
           </div>
